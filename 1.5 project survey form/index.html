@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <!--STORY 3-->
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      
+      <!--STORY 1-->
+      <h1 id="title">Survey</h1>
+
+      <!--STORY 2-->
+    <p id="description">Thanks for making the time to help us improve your experience!</p>
+
+
+
+      <fieldset>
+
+        <!--STORY 4, 10a, 11a-->
+        <label for="name" id="name-label">Name 
+          <input id="name" name="name" 
+          type="text" required 
+          placeholder="John Doe"/></label>
+ 
+        <!--STORY 5, 6, 10b, 11b-->
+        <label for="email" id="email-label">Email 
+          <input id="email" name="email" 
+          type="email" required 
+          placeholder="jdoe@yahoo.com"/></label>
+
+        <!--STORY 7, 8, 9, 10c, 11c-->
+        <label for="number" id="number-label">Age 
+          <input id="number" name="age" type="number" 
+          pattern="[0-9]{0,}" min=1 max=130 required 
+          placeholder="50"/>
+        </label>
+
+        <!--STORY 12-->
+        <label for="dropdown">What do you prefer?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Tomato</option>
+            <option value="2">Corn</option>
+            <option value="3">Potato</option>
+          </select>
+        </label>
+
+        <!--STORY 13-->
+        <label for="personal-account"><input 
+        id="personal-account" type="radio" 
+        name="account-type" value="personal" class="inline" /> 
+        Personal Account</label>
+        <label for="business-account"><input 
+        id="business-account" value="business" type="radio" 
+        name="account-type" class="inline" /> 
+        Business Account</label>
+
+        <!--STORY 14-->
+        <label for="cb1">
+          <input id="cb1" type="checkbox" 
+          value="me" class="inline" /> 
+          This feedback is for me</a>
+        </label>
+        <label for="cb2">
+          <input id="cb2" type="checkbox" 
+          value="child" class="inline" /> 
+          This feedback is for my child</a>
+        </label>
+        <label for="cb3">
+          <input id="cb3" type="checkbox" 
+          value="else" class="inline" /> 
+          This feedback is for someone else</a>
+        </label>
+
+        <!--STORY 15-->
+        <label for="comments">Feedback
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Things I think about this website..."></textarea>
+        </label>
+
+        <!--STORY 16-->
+        <input id="submit" type="submit"    
+        value="Submit" />
+
+
+      </fieldset>
+
+    </form>
+  </body>
+</html>
