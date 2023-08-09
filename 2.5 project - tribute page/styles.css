@@ -1,0 +1,30 @@
+/* story 8, 9 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  figure {
+    padding: 18px;
+    text-align: center;
+  }
+  
+  figcaption {
+    margin: 8px;
+  }
+  
+  * {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 18px;
+  }
+  
+  a, a:visited, a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: purple;
+  }
